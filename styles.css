@@ -1,0 +1,117 @@
+nav a {color: rgb(37, 255, 251);}
+main {color:rgb(216, 255, 125);}
+h1 {
+    color: rgb(216, 255, 87);
+}
+
+h1 {font-size: 3.5em;}
+p{color: hotpink;}
+main a{color: rgb(192, 243, 103);}
+body {
+    background-color:rgb(6, 14, 72);}
+h1{font-family: Georgia, 'Times New Roman', Times, serif;}
+h1, p{text-align: center;}
+{text-decoration: double;}
+{line-height: 0cm;}
+{font-weight: 1000;}
+{padding: 0.5cm;}
+h1 {
+    border: 2px solid hotpink;
+    border-radius: 8px;
+    padding: 30px;
+  }
+head a{color: aqua;}
+a{
+color: hotpink
+}
+section p{color: dodgerblue;}
+
+footer{
+    display: block;
+    padding: 90px;
+    background-color: #6f8aff;
+  }
+  li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0a1d65;
+  }
+  
+
+  
+  li a {
+    display: block;
+    color: rgb(206, 253, 141);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: rgb(248, 129, 238);
+  }
+
+  footer ul
+  {display:flex;}
+
+
+head ul{
+    display: block;
+    padding: 90px;
+    background-color: #6f8aff;
+  }
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0a1d65;
+  }
+  
+bovenkant balk
+  head{
+    display: block;
+    padding: 90px;
+    background-color: #6f8aff;
+  }
+  li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0a1d65;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    color: rgb(206, 253, 141);
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  head ul:hover {
+    background-color: rgb(248, 129, 238);
+  }
+  head {
+    display: block;
+    padding: 30px;
+    background-color: #6f8aff;
+  }
+
