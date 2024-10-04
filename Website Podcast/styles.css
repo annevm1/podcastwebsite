@@ -1,3 +1,4 @@
+/*de titel van elke pagina*/
 h1 {
     color: #d9f103;
     font-size: 3.5em;
@@ -8,10 +9,12 @@ h1 {
     padding: 10px;
 }
 
+/*achtergrondkleur elke pagina*/
 body {
     background-color: #0d0d55;
   }
 
+/*blokje socialmedia op homepagina*/
 .socialmedia {
 color: #0d0d55;
 background-color: #ff99dc;
@@ -29,11 +32,14 @@ background-image: url(socialmedia.png);
 background-position: center;
 background-size: 19em;
 
+/*podcast logo op homepagina*/
 }
 main img{
   width: 70em;
 margin-left: 4cm;
 } 
+
+/*achtergrond van stukje tekst homepagina*/
 .naast {
 display: flex;
 justify-content: space-between;
@@ -41,6 +47,8 @@ background-color: #dcf98c;
 border-radius: 3em;
 border: 1em solid #d2c7ff;
 }
+
+/*opmaak stukje tekst homepagina*/
 .naast p{
 color: #0d0d55;
 align-items: center;
@@ -51,7 +59,7 @@ border-radius: 2em;
 }
 
 
-
+/*gebruikt op alle paginas, balk onderin*/ 
 footer ul{
     padding: 50px;
     list-style-type: none;
@@ -65,12 +73,13 @@ footer ul{
     padding-left: 10em;
   }
 
+  /*geeft kleur in balk op welke pagina je zit*/
   .aanwezig{
   background-color: #d9f103;
   }
   
 
-
+/*gebruikt op alle paginas, balk bovenin*/
 li a {
   display: block;
     color: rgb(7, 11, 75);
@@ -104,7 +113,7 @@ li a {
 
 
 
-
+/*afleveringen opmaak thumbnails*/
 .thumbnails{
 width: 13em;
 margin-left: 6em;
@@ -140,13 +149,12 @@ main .thumbnails:hover{
   transition: background-color 0.3s;
 }
 
-.thumb:hover{
+main .thumb:hover{
   background-color: #ff99dc;
   border-radius: 2em;
-  display: flex;
-  align-items: row;
 }
 
+/*opmaak titels van afleveringen*/
 h2 {
   color: #d9f103;
   font-size: 2em;
@@ -155,14 +163,15 @@ h2 {
   margin-top: 40px;
 }
 
+/*opmaak tekst home en afleveringen*/ 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'tahoma', Georgia, 'Times New Roman', Times, serif;
   margin: 0;
   padding: 20px;
 }
 
 
-
+/*balk om de thumbnail en tekst heen, afleveringen*/
 .container {
   display: flex;
   flex-direction: column;
@@ -178,13 +187,13 @@ body {
   margin-bottom: 1em;
 }
 
-
 .episode:hover{
   background-color: #d2c7ff;
   transition: 400ms ease;
   border-radius: 2em;
 }
 
+/*opmaak van tekst in afleveringen en over ons*/
 h2 {
 margin-top: 1em;
 }
@@ -195,9 +204,9 @@ p {
   width: 40em;
 }
 
-
+/*opmaak button luisteren afleveringen*/
 .episode-text button{
-  background-color: #d2c7ff;
+background-color: #d2c7ff;
 border-radius: 2em;
 margin-left: 15px;
 cursor: pointer;
@@ -211,6 +220,7 @@ button:hover{
 }
 
 
+/*over ons*/
 .overons h2 {
   display: flex;
   justify-content: center;
@@ -223,3 +233,7 @@ button:hover{
   text-align: center;
   margin-bottom: 3em;
   }
+
+  /* Ik heb geprobeerd de px waardes om te zetten in em, vw of % 
+  maar dit gaf niet de opmaak die ik wilde op mijn website 
+  dus heb ik een paar px behouden*/
