@@ -1,41 +1,67 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Podcast website</title>
+    <title>Homepagina</title>
 </head>
+
 <body>
+    
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="workshops.html">Workshops</a>
+        <a href="locatie.html">Locatie</a>
+    </div>
+
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="aanwezig">Home</a></li>
-                <li><a href="afleveringen.html">Afleveringen</a></li>
-                <li><a href="overons.html">Over ons</a></li>
-            </ul>
-        </nav>
-        <h1>Welkom!</h1>
+        <img src="images/logoproject2.0.png" alt="Logo van Bakkerij Breco">
     </header>
 
-    <main>  
-        <section>
-            <img src="images/fotoberoeps.png" alt="Logo van de podcast Beroepsgeheim">
+    <main>
+        <section class="intro">
+            <h1><i>''Van oud naar vers lekkers''</i></h1>
+            <img src="images/bakinglabfoto.png" alt="Baking Lab" class="schaduw">
+            <p>
+                Breco is een <span class="bold">circulaire bakkerij</span> gevestigd in Amsterdam-Oost. Ze maken van oud brood nieuw brood en gaan zo voedselverspilling tegen.
+            </p>
+            <img src="images/broodjess.png" alt="Broodjes" class="intro-img">
+            <p> 
+                Hieronder zie je het bakproces van de circulaire broden.
+            </p>
         </section>
 
-        <section class="naast">
-            <p>De podcast waarin we bijzondere beroepen onder de loep nemen en je alles vertellen wat je nog niet wist. Van eventproducers tot piloten, van chefs tot chirurgen – we vragen ze het hemd van het lijf over hun carrière en hoe ze zijn gekomen waar ze nu zijn. Heb jij nog geen idee wat je later wilt worden? Of vind je het gewoon leuk om te horen wat anderen doen? Dan zit je hier goed! En... onze gasten delen ook hun beroepsgeheimen tijdens een vragenvuur. Dus, hoe verdien je dáár je brood mee? Je hoort het bij ons!</p>
-            
-            <p class="socialmedia"></p>
+        <section class="bakproces">
+            <div class="slides">
+                <img src="images/broodkruimels.png" alt="Broodkruimels">
+                <img src="images/brooddeeg.png" alt="Brooddeeg">
+                <img src="images/broodbak.png" alt="Gebakken Brood">
+            </div>
         </section>
+
+        <p>
+            Daarnaast hebben ze nog een hoop andere producten die op circulaire wijze zijn gemaakt waar je in het Bakkerscafé van kunt genieten.
+        </p>
+
+        <section class="producten">
+            <div class="slides">
+                <img src="images/taart.png" alt="Taart">
+                <img src="images/gebak.png" alt="Gebak">
+                <img src="images/olijf.png" alt="Tapenade">
+            </div>
+        </section>
+
+        <img src="images/kopje.png" alt="Kopje">
+        <img src="images/bakkerscafe.png" alt="Bakkerscafé" class="schaduw">
+        <img src="images/graan.png" alt="Graanico">
     </main>
 
     <footer>
-        <ul>
-            <li><a href="contact">Contact</a></li>
-            <li><a href="Privacyverklaring">Privacyverklaring</a></li>
-            <li><a href="Cookies">Cookies</a></li>
-        </ul>
+        <p>&copy; 2024 Bakkerij Breco</p>
     </footer>
+
 </body>
+
 </html>

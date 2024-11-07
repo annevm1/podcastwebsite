@@ -1,239 +1,246 @@
-/*de titel van elke pagina*/
-h1 {
-    color: #d9f103;
-    font-size: 3.5em;
-    font-family: 'tahoma', Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    border: 2px solid #ff99dc;
-    border-radius: 8px;
-    padding: 10px;
-}
-
-/*achtergrondkleur elke pagina*/
 body {
-    background-color: #0d0d55;
-  }
-
-/*blokje socialmedia op homepagina*/
-.socialmedia {
-color: #0d0d55;
-background-color: #ff99dc;
-padding: 3em;
-border-radius: 2cm;
-font-size: 20px;
-font-family: 'tahoma', Georgia, 'Times New Roman', Times, serif;
-width: 20em;
-border: 20px solid #0d0d55;
-text-align: center;
-margin-right: 1em;
-font-size: 2em;
-margin-left: 6em;
-background-image: url(images/socialmedia.png);
-background-position: center;
-background-size: 19em;
-
-/*podcast logo op homepagina*/
+  background-color: #f4e2e1;  
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-bottom: 60px; 
+  text-align: center;
 }
-main img{
-  width: 70em;
-margin-left: 4cm;
+
+/* styling voor logo */
+header img {
+  width: 100%; 
+  max-width: 30em; 
+  display: block;
+  padding-top: 2em;
+  src: url('images/logoproject2.0.png'); /* Het logo komt uit de images map */
+}
+
+/* schaduw afbeeldingen boven en onder homepagina*/
+.schaduw {
+  width: 100%; 
+  max-width: 30em; 
+  margin-top: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 2em;
+  box-shadow: 10px 10px 0px #334d42; 
+  border: 5px solid #f7c2bc;
+}
+
+/* h1 homepagina */
+h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 1em;
+}
+
+/* stukjes tekst homepagina */
+p {
+  font-size: 1.5em;
+  padding-top: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-align: center; 
+  margin-bottom: 2em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* dikke tekst homepagina */
+.bold {
+  font-weight: bold;
+}
+
+/* brood icoontjes homepagina */
+img[src="images/broodjess.png"] {
+  display: flex;        
+  margin-left: auto;     
+  margin-right: auto;   
+  max-width: 80%;        
+  height: auto;        
+  animation: shake 2s ease-in-out 1s infinite; 
+}
+
+/* wiebel animatie */
+@keyframes shake {
+  0% {
+      transform: translateX(0); /* stil */
+  }
+  25% {
+      transform: translateX(-5px); /* links */
+  }
+  50% {
+      transform: translateX(5px); /* rechts */
+  }
+  75% {
+      transform: translateX(-5px); /* links */
+  }
+  100% {
+      transform: translateX(0); /* stil */
+  }
+}
+
+/* graan plaatje homepagina */
+img[src="images/graan.png"] {
+  display: flex;       
+  max-width: 100%;      
+  height: auto;         
 } 
 
-/*achtergrond van stukje tekst homepagina*/
-.naast {
-display: flex;
-justify-content: space-between;
-background-color: #dcf98c;
-border-radius: 3em;
-border: 1em solid #d2c7ff;
+/* kopjes plaatje homepagina met animatie*/
+img[src="images/kopje.png"] {
+  display: flex;        
+  max-width: 100%;       
+  height: auto;         
+  animation: shake 2s ease-in-out 1s infinite; /* schud animatie */
 }
 
-/*opmaak stukje tekst homepagina*/
-.naast p{
-color: #0d0d55;
-align-items: center;
-padding-left: 1em;
-padding-top: 2em;
-background-color: #d2c7ff;
-border-radius: 2em;
+/* fotos homepagina die horizontaal swipen */
+.slides {
+  width: 100%;
+  overflow-x: auto;      
+  white-space: nowrap;   
+  text-align: center;    
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
-
-/*gebruikt op alle paginas, balk onderin*/ 
-footer ul{
-    padding: 50px;
-    list-style-type: none;
-    background-color: #d2c7ff;
-    display: flex;
-    color: #d9f103;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: 'tahoma', Georgia, 'Times New Roman', Times, serif;
-    padding: 4em;
-    padding-left: 10em;
-  }
-
-  /*geeft kleur in balk op welke pagina je zit*/
-  .aanwezig{
-  background-color: #d9f103;
-  }
-  
-
-/*gebruikt op alle paginas, balk bovenin*/
-li a {
-  display: block;
-    color: rgb(7, 11, 75);
-    padding: 14px 16px;
-    text-decoration: none;
-    border-radius: 12px;
-    border: 3px solid #d9f103;
-    margin: 1em;
-
-  }
-
-  li a:hover {
-    background-color: #d9f103;
-    transition: 450ms ease;
-    border-radius: 2cm;
-  }
-
-  nav ul {
-    list-style-type: none;
-    background-color: #d2c7ff;
-    border: 5px solid #dcf98c;
-    border-radius: 50px;
-    display: flex;
-    color: #d9f103;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: 'tahoma', Georgia, 'Times New Roman', Times, serif;
-    justify-content: center;
-    justify-content: space-around;
-  }
-
-
-
-/*afleveringen opmaak thumbnails*/
-.thumbnails{
-width: 13em;
-margin-left: 6em;
-padding-top: 7em;
-display: flex;
-align-items: baseline;
-background-color: #0d0d55;
-color: white;
-padding: 10px;
-margin-top: 2em;
-text-align: center;
-border-radius: 2em;
-transition: background-color 0.3s;
+/* opmaak afbeeldingen in de slideshow */
+.slides img {
+  width: 80%;            
+  height: auto;        
+  margin-left: 10px;    
+  margin-right: 10px;
+  border-radius: 2em;   
+  box-shadow: 10px 10px 0px #dbe8c3;
+  border: 5px solid #f7c2bc; 
 }
 
-main .thumbnails:hover{
-  background-color: #d9f103;
-  border-radius: 2em;
-}
-
-.thumb {
-  width: 13em;
-  margin-left: 6em;
-  padding-top: 7em;
+/* navigatiebalk onderaan */
+.navbar {
   display: flex;
-  align-items: baseline;
-  background-color: #0d0d55;
+  justify-content: space-around;
+  background-color: #334d42;
   color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* navigatiebalk tekst*/
+.navbar a {
+  color: white;
+  text-decoration: none;
   padding: 10px;
-  margin-top: 2em;
   text-align: center;
-  border-radius: 2em;
-  transition: background-color 0.3s;
+  font-size: 1.2em;
 }
 
-main .thumb:hover{
-  background-color: #ff99dc;
-  border-radius: 2em;
+.navbar a:active {
+  background-color: #ffd04d;
+  border-radius: 5px;
 }
 
-/*opmaak titels van afleveringen*/
-h2 {
-  color: #d9f103;
-  font-size: 2em;
-  font-family: 'tahoma', Georgia, 'Times New Roman', Times, serif;
-  padding-left: 20px;
-  margin-top: 40px;
+.schuin-schud-afbeelding {
+  width: 25%;
+  max-width: 200px;
+  animation: shake 2s ease-in-out 1s infinite;
 }
 
-/*opmaak tekst home en afleveringen*/ 
-body {
-  font-family: 'tahoma', Georgia, 'Times New Roman', Times, serif;
-  margin: 0;
-  padding: 20px;
-}
-
-
-/*balk om de thumbnail en tekst heen, afleveringen*/
-.container {
+/* workshops styling */
+.workshops {
   display: flex;
   flex-direction: column;
-  gap: 20px; 
+  align-items: center;
+  padding: 10px;
 }
 
-.episode {
-  display: flex;
-  background-color: #0d0d55;
-  border: 3px dotted #d9f103;
-  border-radius: 4em;
-  padding-bottom: 2em;
-  margin-bottom: 1em;
-}
-
-.episode:hover{
-  background-color: #d2c7ff;
-  transition: 400ms ease;
-  border-radius: 2em;
-}
-
-/*opmaak van tekst in afleveringen en over ons*/
-h2 {
-margin-top: 1em;
-}
-
-p {
-  margin-left: 19px;
-  color: #ff99dc;
-  width: 40em;
-}
-
-/*opmaak button luisteren afleveringen*/
-.episode-text button{
-background-color: #d2c7ff;
-border-radius: 2em;
-margin-left: 15px;
-cursor: pointer;
-border: 6px solid #d9f103;
-}
-
-button:hover{
-  background-color: #d9f103;
-  transition: 400ms ease;
-  border-radius: 2em;
-}
-
-
-/*over ons*/
-.overons h2 {
-  display: flex;
-  justify-content: center;
-  }
-  
-  .overons p {
-  display: flex;
-  justify-content: center;
-  margin-left: 25em;
+/* workshops boxen */
+.workshop {
+  background-color: #dbe8c3;
+  box-shadow: 10px 10px 0px #f7c2bc; 
+  border: 5px solid #ffd04d;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 20px;
+  width: 90%;
+  max-width: 350px; 
   text-align: center;
-  margin-bottom: 3em;
+}
+
+.workshop h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.workshop p {
+  font-size: 14px;
+  color: #333;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* aanmelden knop styling */
+.aanmeldenknop {
+  background-color: #334d42;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.aanmeldenknop:hover {
+  background-color: #ffd04d;
+}
+
+/* Media query voor kleinere schermen (iPhone 6/7/8) - mbv chatgpt */
+@media only screen and (max-width: 375px) {
+  .zelfleren p {
+    font-size: 14px; 
   }
 
-  /* Ik heb geprobeerd de px waardes om te zetten in em, vw of % 
-  maar dit gaf niet de opmaak die ik wilde op mijn website 
-  dus heb ik een paar px behouden*/
+  .vergroten img {
+    width: 90%; 
+    max-width: 220px; 
+  }
+
+  .workshop h2 {
+    font-size: 18px; 
+  }
+
+  .workshop p {
+    font-size: 12px; 
+  }
+
+  .aanmelden-btn {
+    font-size: 14px;
+  }
+}
+
+/* titels border */
+h1 {
+  font-size: 2em;
+  margin-top: 20px;
+  color: #333;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border: 4px dotted #ffd04d;
+  background-color: #dbe8c3;
+  padding: 1em;
+}
+
+.kaart {
+  margin-bottom: 9em;
+  box-shadow: 10px 10px 0px #334d42; 
+}
